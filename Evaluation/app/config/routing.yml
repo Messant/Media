@@ -1,6 +1,0 @@
-media:
-    resource: "@MediaBundle/Controller/"
-    type:     annotation
-    prefix:   /
-
-
