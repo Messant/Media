@@ -1,0 +1,10 @@
+19124a,::1,GET,http://www.localhost/Documents/Evaluation/web/app_dev.php/album/,1479833428,2f478d,200
+2f478d,::1,GET,http://www.localhost/Documents/Evaluation/web/app_dev.php/album/,1479833428,,500
+b381a6,::1,GET,http://www.localhost/Documents/Evaluation/web/app_dev.php/,1479833433,,200
+ea7214,::1,GET,http://www.localhost/Documents/Evaluation/web/app_dev.php/,1479833436,,200
+7b2232,::1,GET,http://www.localhost/Documents/Evaluation/web/app_dev.php/album/,1479833452,c02925,200
+c02925,::1,GET,http://www.localhost/Documents/Evaluation/web/app_dev.php/album/,1479833452,,500
+46f0a3,::1,GET,http://www.localhost/Documents/Evaluation/web/app_dev.php/album/,1479833481,,200
+6f8069,::1,GET,http://www.localhost/Documents/Evaluation/web/app_dev.php/album/new,1479833489,267001,200
+267001,::1,GET,http://www.localhost/Documents/Evaluation/web/app_dev.php/album/new,1479833489,,500
+2c5741,::1,GET,http://www.localhost/Documents/Evaluation/web/app_dev.php/album/new,1479833504,,200

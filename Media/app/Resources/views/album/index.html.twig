@@ -1,0 +1,71 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+    <section>
+                <h1>Albums</h1>
+        <div class="tbl-header">
+            <table cellpadding="0" cellspacing="0" border="0">
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Titrealbum</th>
+                <th>Artiste</th>
+                <th>Genre</th>
+                <th>Support</th>
+                <th>Commentaire</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+                </table>
+            </div>
+        <tbody>
+        <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+        {% for album in albums %}
+            <tr>
+                <td><a href="{{ path('album_show', { 'id': album.id }) }}">{{ album.id }}</a></td>
+                <td>{{ album.titreAlbum }}</td>
+                <td>{{ album.artiste }}</td>
+                <td>{{ album.genre}}</td>
+                <td>{{ album.support }}</td>
+
+
+                <td>
+
+                            <a class="btn" href="{{ path('album_show', { 'id': album.id }) }}">show</a>
+
+                            <a class="btn" href="{{ path('album_edit', { 'id': album.id }) }}">edit</a>
+
+                </td>
+            </tr>
+        {% endfor %}
+            </table>
+        </div>
+        </tbody>
+
+    </table>
+
+
+
+
+        </form>
+
+    </section>
+        <div class="button">
+            <a class="btn" href="{{ path('album_new') }}">Create a new album</a>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block javacript %}
+<script>
+    // '.tbl-content' consumed little space for vertical scrollbar, scrollbar width depend on browser/os/platfrom. Here calculate the scollbar width .
+    $(window).on("load resize ", function() {
+        var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+        $('.tbl-header').css({'padding-right':scrollWidth});
+    }).resize();
+</script>
+{% endblock %}
